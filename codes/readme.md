@@ -135,3 +135,181 @@ int main()
     return 0;
 }
 ```
+
+
+## Even Odd Checking
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int a;
+    
+    scanf("%d",&a);
+    
+    if(a%2==0)
+    {
+        printf("Even");
+    }
+    else
+    {
+        printf("Odd");
+    }
+    
+    
+    return 0;
+}
+```
+
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int a;
+    
+    scanf("%d",&a);
+    
+    if(a%2==1)
+    {
+        printf("Odd");
+    }
+    else
+    {
+        printf("Even");
+    }
+    
+    
+    return 0;
+}
+```
+
+## 1+2+3+......n
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int a;
+    scanf("%d", &a);
+    int sum;
+    
+    sum = (a*(a+1)) / 2;
+    
+    printf("%d", sum);
+
+    
+    return 0;
+}
+```
+
+## Positive/Negative/Zero
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int a;
+    
+    scanf("%d", &a);
+    
+    if(a>0)
+    {
+        printf("Positive");
+    }
+    else if(a<0)
+    {
+        printf("Negative");
+    }
+    else if(a==0)
+    {
+        printf("Zero");
+    }
+    
+    return 0;
+}
+```
+
+
+## Leap Year
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int year;
+    
+    scanf("%d", &year);
+    
+    if(year%400 == 0 || (year%100!=0 && year%4==0))
+    {
+        printf("%d is leap year", year);
+    }
+    else
+    {
+        printf("%d is not leap year", year);
+    }
+    
+    return 0;
+}
+```
+
+
+## Vowel / Consonent
+
+```c
+#include <stdio.h>
+int main() 
+{
+    char ch;
+    
+    scanf("%c", &ch);
+    
+    if(ch=='A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' || ch=='a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+    {
+        printf("Vowel");
+    }
+    else
+    {
+        printf("Consonent");
+    }
+    
+    return 0;
+}
+```
+
+## Switch example 
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int n;
+    
+    
+    printf("Enter number between 1 to 3: ");
+    
+    scanf("%d", &n);
+    
+    switch(n)
+    {
+        case 1:
+            printf("Book1");
+            break;
+        case 2:
+            printf("Book2");
+            break;
+        case 3:
+            printf("Book 3");
+            break;
+        default:
+            printf("Invalid Number");
+    }
+    
+    return 0;
+}
+```
+
+> Never forget to use `break` after every case.
+
+---
