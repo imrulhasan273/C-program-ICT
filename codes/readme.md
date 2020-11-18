@@ -72,3 +72,66 @@ int main()
     return 0;
 }
 ```
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int a, b, c;
+    
+    scanf("%d%d%d", &a, &b, &c);
+    
+    if(a<b && a<c)
+    {
+        printf("%d", a);
+    }
+    else if(a<b && c<a)
+    {
+        printf("%d",c);
+    }
+    else if(b<c && b<a)
+    {
+        printf("%d",b);
+    }
+    else if(b<c && a<b)
+    {
+        printf("%d",a);
+    }
+    else if(c<a && c<b)
+    {
+        printf("%d", c);
+    }
+    else if(c<a && b<c)
+    {
+        printf("%d",b);
+    }
+    
+    return 0;
+}
+```
+
+```c
+#include <stdio.h>
+int main() 
+{
+    int a, b, c, min;
+    
+    scanf("%d%d%d", &a, &b, &c);
+    
+    min = a;
+    
+    if(b<min)
+    {
+        min = b;
+    }
+    if(c<min)
+    {
+        min = c;
+    }
+    
+    printf("%d", min);
+    
+    
+    return 0;
+}
+```
