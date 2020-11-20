@@ -313,3 +313,190 @@ int main()
 > Never forget to use `break` after every case.
 
 ---
+
+---
+
+# **FOR LOOP**
+
+---
+
+## 1+2+3+4+......+n
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    int sum=0;
+    
+    scanf("%d", &n);
+    
+    int i;
+    
+    for(i=1 ; i<=n ; i++)
+    {
+        sum = sum + i;
+    }
+    
+    printf("%d", sum);
+   
+    return 0;
+}
+```
+
+## 1+3+5+.....+n
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    int sum=0;
+    
+    scanf("%d", &n);
+    
+    int i;
+    
+    for(i=1 ; i<=n ; i=i+2)
+    {
+        sum = sum + i;
+    }
+    
+    printf("%d", sum);
+
+    
+    return 0;
+}
+
+```
+
+## 2+4+6+8+....+n
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    int sum=0;
+    
+    scanf("%d", &n);
+    
+    int i;
+    
+    for(i=2 ; i<=n ; i=i+2)
+    {
+        sum = sum + i;
+    }
+    
+    printf("%d", sum);
+
+    
+    
+    
+    
+    return 0;
+}
+```
+
+
+## 0+5+10+15+....+n
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    int sum=0;
+    
+    scanf("%d", &n);
+    
+    int i;
+    
+    for(i=0 ; i<=n ; i=i+5)
+    {
+        sum = sum + i;
+    }
+    
+    printf("%d", sum);
+
+
+    return 0;
+}
+
+```
+
+
+## Check Even upto user input
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+
+    scanf("%d", &n);
+    
+    int i;
+    
+    for(i=1 ; i<=n ; i++)
+    {
+       if(i%2==0)
+       {
+           printf("% is even\n",i);
+       }
+    }
+    
+
+    return 0;
+}
+```
+
+# **Star Pattern**
+
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    int n;
+
+    scanf("%d", &n);
+    
+    int i;
+    int j;
+    
+    for(i=1 ; i<=n ; i++)
+    {
+       for(j=1;j<=i;j++)
+       {
+           printf("*");
+       }
+       printf("\n");
+    }
+    
+
+    return 0;
+}
+```
+
+### Output
+
+```
+*
+**
+***
+****
+*****
+```
+
