@@ -500,3 +500,187 @@ int main()
 *****
 ```
 
+## Start Pattern
+
+```c
+#include <stdio.h>
+int main()
+{
+    int i,j,k,l,m,n;
+
+    scanf("%d",&n);
+    
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for(k=1;k<=i;k++)
+        {
+            printf("*");
+        }
+        printf("\n");  
+    }
+      
+    return 0;
+}
+
+
+```
+
+## Output
+
+```
+    *
+   **
+  ***
+ ****
+*****
+```
+
+
+## Star Pattern
+
+```c
+#include <stdio.h>
+int main()
+{
+    int i,j,k,l,m,n;
+
+    scanf("%d",&n);
+    
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for(k=1;k<=i;k++)
+        {
+            printf("*");
+        }
+        for(k=1;k<=i-1;k++)
+        {
+            printf("*");
+        }
+        printf("\n");  
+    }
+        
+    return 0;
+}
+```
+
+## Output
+
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+
+
+# While Loop
+
+## 1+2+....+n
+
+```c
+#include <stdio.h>
+int main()
+{
+    
+    int n;
+    scanf("%d", &n);
+    int sum=0;
+    int i=1;
+    while(i<=n)
+    {
+        sum = sum+i;
+        i++;
+    }
+    
+    printf("%d", sum);
+      
+    return 0;
+}
+```
+
+
+## 1*1 + 2*2 + 3*3 + 4*4 +    +n*n
+
+```c
+#include <stdio.h>
+int main()
+{
+    
+    int n;
+    scanf("%d", &n);
+    int sum=0;
+    int i;
+    for(i=1;i<=n;i++)
+    {
+        sum = sum+i*i;
+    }
+    
+    printf("%d", sum);
+    
+   
+    return 0;
+}
+```
+
+## Break
+
+```c
+#include <stdio.h>
+int main()
+{
+    
+    int n;
+    scanf("%d", &n);
+    int sum=0;
+    int i;
+    for(i=1;i<=n;i++)
+    {
+        if(i==5)
+        {
+            break;
+        }
+        printf("%d\n",i);
+    }
+    
+
+   
+    return 0;
+}
+
+```
+
+
+## Continue
+
+```c
+#include <stdio.h>
+int main()
+{
+    
+    int n;
+    scanf("%d", &n);
+    int sum=0;
+    int i;
+    for(i=1;i<=n;i++)
+    {
+        if(i==5)
+        {
+            continue;
+        }
+        printf("%d\n",i);
+    }
+    
+
+   
+    return 0;
+}
+```
