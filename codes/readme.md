@@ -684,3 +684,177 @@ int main()
     return 0;
 }
 ```
+
+
+# While Loop
+
+## Print A to Z
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    char ch = 'A';
+
+    while(ch<='Z')
+    {
+        printf("%c", ch);
+        
+        ch++;
+    }
+    
+    return 0;
+}
+```
+
+
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    for(char ch = 'A';  ch<='Z' ;  ch++ )
+    {
+        printf("%c", ch);
+    }
+    
+    return 0;
+}
+```
+
+
+## LCM
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int a, b;
+    int max;
+    
+    scanf("%d%d", &a, &b);
+    
+    if(a>b)
+    {
+        max = a;
+    }
+    else
+    {
+        max = b;
+    }
+    
+    
+    while(1)
+    {
+        if(max%a==0 && max%b==0)
+        {
+            printf("%d is LCM", max);
+            break;
+        }
+        max++;
+    }
+    
+    
+    return 0;
+}
+```
+
+# GCD
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int a, b;
+    int gcd = 1;
+    
+    scanf("%d%d", &a, &b);
+    
+    for(int i = 1 ; (i<=a && i<=b) ; i++)
+    {
+        if((a%i == 0) && (b%i == 0))
+        {
+            gcd = i;
+        }
+    }
+    
+    printf("%d", gcd);
+
+    
+    return 0;
+}
+```
+
+
+## Factorial
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    
+    int mul = 1;
+    
+    scanf("%d", &n);
+    
+    if(n!=0)
+    {
+        for(int i=1 ; i<=n ; i++ )
+        {
+            mul = mul * i;
+        }
+    }
+  
+
+    printf("%d", mul);
+    
+    return 0;
+}
+```
+
+
+## Prime 
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    
+    int n;
+    int flag=1;  //initially ---> prime
+    
+    scanf("%d", &n);
+    
+    for(int i=2;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            flag = 0;  // not prime
+            break;
+        }
+    }
+    
+    if(flag==1)
+    {
+        printf("Prime");
+    }
+    else
+    {
+        printf("Not Prime");
+    }
+    
+    return 0;
+}
+```
