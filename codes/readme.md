@@ -858,3 +858,46 @@ int main()
     return 0;
 }
 ```
+
+# Prime num checking upto n
+
+```c
+#include <stdio.h>
+int main()
+{
+    // int n =50;
+    int n;
+    
+    scanf("%d", &n);
+
+    int i; 
+    int j=2;
+    while(j<=n)
+    {
+        int flag = 1;           //initially prime
+        for(i=2; i<j; i++)
+        {
+           if(j%i==0)
+           {
+               flag=0;
+               break;
+           }
+        }
+        
+        if(flag==1)
+        {
+            printf("%d is Prime\n",j);
+        }
+        else
+        {
+            printf("%d is not Prime\n",j);
+        }
+        
+        j++;
+    }
+    return 0;
+}
+```
+
+
+
