@@ -900,4 +900,74 @@ int main()
 ```
 
 
+# **Fibonacci**
 
+---
+
+```c
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    
+    int prev_1=0;
+    int prev=1;
+    
+    int curr=0;
+
+    printf("%d ",prev_1);
+    printf("%d ",prev);
+    
+    
+    while(curr<=n)
+    {
+        curr = prev+prev_1;
+        printf("%d ", curr);
+        
+        prev_1=prev;
+        prev = curr;
+    }
+
+    return 0;
+}
+```
+
+
+# Armstrong Number
+
+```c
+#include <stdio.h>
+int main()
+{
+    int n;
+    int lastD;
+    
+    scanf("%d",&n);
+    int num = n;
+    
+    int sum = 0;
+    
+    while(n>0)
+    {
+        lastD = n % 10;
+        
+        sum = sum + lastD*lastD*lastD;
+        
+        n = n / 10;
+    }
+    
+    if(num==sum)
+    {
+        printf("%d is Armstrong Number.",num);
+    }
+    else
+    {
+        printf("%d is not Armstrong Number.",num);
+    }
+    
+    
+
+    return 0;
+}
+```
