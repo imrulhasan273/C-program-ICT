@@ -971,3 +971,164 @@ int main()
     return 0;
 }
 ```
+
+# Constant and Defined
+
+```c
+#include<stdio.h>   
+#define PI 3.141  
+int main()   
+{  
+    // const float PI = 3.1416;
+    float radius, area;  
+    
+    scanf("%f", & radius);  
+    
+    area = PI * radius * radius;  
+    
+    printf("%.2f\n", area);  
+    
+    return 0;  
+}   
+```
+
+
+# string of charecter
+
+```c
+#include<stdio.h>   
+int main()   
+{  
+    char str[100];
+    
+    // gets(str);
+    
+    scanf("%s",str);
+    
+    //puts(str);
+    
+    printf("%s",str);
+
+    return 0;  
+}   
+```
+
+
+## Function 
+
+```c
+#include<stdio.h>
+#include<math.h>
+
+int square(int d)   //function defined
+{
+    d=sqrt(d);
+    
+    printf("%d",d);
+}
+int main()   
+{  
+    int a;
+    
+    
+    scanf("%d",&a);
+    
+    square(a);  //function call
+    
+
+    return 0;  
+}   
+```
+
+
+
+```c
+#include<stdio.h>
+#include<math.h>
+int square(int d); //prototype
+int main()   
+{  
+    int a;
+    
+    
+    scanf("%d",&a);
+    
+    square(a);  //call
+    
+
+    return 0;  
+}   
+int square(int d)           //defination
+{
+    d=sqrt(d);
+    
+    printf("%d",d);
+}
+```
+
+# **Array**
+
+
+```c
+
+#include<stdio.h>
+#include<math.h>
+int main()   
+{  
+    
+    int n;
+    
+    printf("Number of students: ");
+    scanf("%d",&n);
+    
+    
+    int a[n];  ///if n = 5  -> a[5]  -> a[0], a[1], a[2], a[3], a[4];
+    
+    int count=0;
+    for(int i=0;i<n;i++)
+    {
+        count++;
+        printf("Student %d : ", count);
+        scanf("%d", &a[i]);     //a[0], a[1], a[2], a[3], a[4];
+    }
+    
+    printf("4th User is : %d", a[3]);
+    
+    
+
+    return 0;  
+}   
+```
+
+```c
+#include<stdio.h>
+#include<math.h>
+int main()   
+{  
+    
+    int n;
+    
+    printf("Number of students: ");
+    scanf("%d",&n);
+    
+    
+    int a[n];  ///if n = 5  -> a[5]  -> a[0], a[1], a[2], a[3], a[4];
+    
+    int count=0;
+    for(int i=0;i<n;i++)
+    {
+        count++;
+        printf("Student %d : ", count);
+        scanf("%d", &a[i]);     //a[0], a[1], a[2], a[3], a[4];
+    }
+    
+    for(int i=0;i<n;i++)
+    {
+        printf("%d\n",a[i]);
+    }
+    
+    
+
+    return 0;  
+}   
+```
