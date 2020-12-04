@@ -1081,7 +1081,6 @@ int main()
     printf("Number of students: ");
     scanf("%d",&n);
     
-    
     int a[n];  ///if n = 5  -> a[5]  -> a[0], a[1], a[2], a[3], a[4];
     
     int count=0;
@@ -1132,3 +1131,193 @@ int main()
     return 0;  
 }   
 ```
+
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int x;
+    
+    scanf("%d",&x);
+    
+    double func = pow(x,4) + 5*x - 3;
+    
+    printf("f(x)= %fl", func);
+
+    return 0;
+}
+```
+
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    //1*2*3*4*......N
+    int n;
+    
+    int mul=1;
+    
+    scanf("%d", &n);
+    
+    for(int i=1;i<=n;i++)
+    {
+        mul = mul * i;
+    }
+    
+    printf("%d", mul);
+    
+}
+```
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    //20 --> 100  [20+22+24+26......100]
+    
+    int sum=0;
+    
+    for(int i=20;i<=100;i+=2)
+    {
+        sum = sum + i;
+    }
+    
+    printf("%d", sum);
+}
+
+```
+
+
+
+#
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    //(1/1)+(1/2)+(1/3)+(1/4)+.......+(1/N)
+    
+    int sum=0;
+    
+    int n;
+    
+    scanf("%d", &n);
+    
+    for(int i=1;i<=n;i++)
+    {
+        sum = sum + 1/i ;
+    }
+    
+    
+    
+    printf("%d", sum);
+}
+```
+
+
+
+# double type problem..... 
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    //(1/1)+(1/2)+(1/3)+(1/4)+.......+(1/N)
+    
+    double sum=0;
+    
+    int n;
+    
+    scanf("%d", &n);
+    
+    for(double i=1;i<=n;i++)
+    {
+        sum = sum + (1/i);
+    }
+    
+    
+    
+    printf("%fl", sum);
+}
+
+```
+
+# Previous problem using type casting
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    //(1/1)+(1/2)+(1/3)+(1/4)+.......+(1/N)
+    
+    double sum=0;
+    
+    int n;
+    
+    scanf("%d", &n);
+    
+    for(int i=1;i<=n;i++)
+    {
+        sum = sum + (1/(float)i);       //type cast
+    }
+    
+    
+    
+    printf("%fl", sum);
+}
+
+```
+
+
+
+## Array [2+4+....20 using Array]
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int arr[10]={2,4,6,8,10,12,14,16,18,20};
+    
+    for(int i=0;i<10;i++)
+    {
+        printf("%d  ", arr[i]); //arr[0], arr[1],.......arr[9]
+    }
+    
+    //array indexing starts from 0 to n-1 ; if n=5 then 0,1,2,3,4
+    //example: array index 5 means ---> 6th element of the array.
+}
+```
+
+
+
+## Multi Dimenton Program
+
+```c
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int arr[3][2]={ {2,3} , {4,5} , {6,7} };
+    //  2->[0][0] , 3->[0][1],  4->[1][0] , 5->[1][1], 6->[2][0], 7->[2][1] 
+    
+    
+    for(int i=0;i<3;i++)    //outer loop->row
+    {
+        for(int j=0;j<2;j++)
+        {
+            printf("%d ", arr[i][j]);
+        }
+    }   
+}
+```
+
+
