@@ -151,6 +151,7 @@
 
 
 15. Write a C program that read 5 numbers and counts the number of positive numbers and negative numbers.
+
 	```
 	Test Data :
 	Input the first number: 5
@@ -167,6 +168,7 @@
 
 
 16.  Write a C program that read 5 numbers and counts the number of positive numbers and print the average of all positive values. 
+
 	```
 	Test Data :
 	Input the first number: 5
@@ -183,6 +185,7 @@
 
 
 17.  Write a C program to find and print the square of each one of the even values from 1 to a specified value.
+	
 	```
 	Test Data :
 	List of square of each one of the even values from 1 to a 4 :
