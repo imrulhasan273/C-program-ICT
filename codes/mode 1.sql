@@ -60,6 +60,52 @@ from
   tutorial.aapl_historical_stock_price
 where 
   volume = 0;
+  
+  
+select * from tutorial.aapl_historical_stock_price;
+
+
+--Find unique/distinct years in dataset.
+select 
+  distinct year 
+from 
+  tutorial.aapl_historical_stock_price order by year asc;
+  
+  
+
+
+select * from tutorial.aapl_historical_stock_price;
+
+
+--Find unique/distinct months in dataset.
+select 
+  distinct month 
+from 
+  tutorial.aapl_historical_stock_price order by month asc;
+
+
+select * from tutorial.aapl_historical_stock_price;
+
+
+
+---Find total Volume, count, avg(close) group by years.
+select 
+    year,
+    sum(volume) as total_volume,
+    count(1) as day_count,
+    avg(close) as avg_close_value,
+    count (distinct month) as count_month
+from 
+    tutorial.aapl_historical_stock_price
+group by 
+    year;
+  
+  
+
+  
+
+select * from tutorial.aapl_historical_stock_price;
+
 
 
 
