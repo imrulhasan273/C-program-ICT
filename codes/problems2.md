@@ -132,3 +132,93 @@ int main()
     return 0;
 }
 ```
+
+---
+
+3. Reverse the digits of an integer number using While Loop
+
+```c
+/**
+    Reverse the digits of an integer number using While Loop
+**/
+#include<stdio.h>
+int main()
+{
+    int n, mod, div;
+    printf("Enter an Integer: ");
+    scanf("%d", &n);
+
+    printf("Reverse of %d is : ", n);
+    while(n>0)
+    {
+        mod = n%10;
+        printf("%d", mod);
+        n = n / 10;
+    }
+
+    return 0;
+}
+```
+
+---
+
+4. Factorial using For Loop
+
+```c
+/**
+    Factorial using For Loop
+**/
+#include<stdio.h>
+int main()
+{
+    int n;
+
+    scanf("%d", &n);
+
+    int mul = 1;
+
+    for(int i=1;i<=n;i++)
+    {
+        mul = mul * i;
+    }
+
+    printf("Factorial of %d is %d",n, mul);
+
+    return 0;
+}
+```
+
+---
+
+5. Factorial using For Recurson
+
+```c
+/**
+    Factorial using For Recurson
+**/
+#include<stdio.h>
+int factorial(int m) //get using m
+{
+    int fact = 1;
+    if(m==1 || m==0)
+    {
+        return fact;
+    }
+    else
+    {
+        fact = m * factorial(m-1);
+        return fact;
+    }
+}
+int main()
+{
+    int n;
+    scanf("%d", &n);
+
+    int result = factorial(n); //send using n
+
+    printf("%d", result);
+
+    return 0;
+}
+```
